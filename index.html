@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Calculator</title>
+    <!-- Add your preferred Bootstrap CSS link here -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300&family=Nunito:wght@200&family=Raleway:wght@600&family=Tektur:wght@600;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class="holder">
+        <h1 class="bg-primary text-white align-center p-4">Guess Your Laptop Price!</h1>
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <form class="custom-form row" method="post" id="laptopForm">
+                        <div class="form-group col-md-6">
+                            <label for="Company">Laptop Company</label>
+                            <select class="form-control" name="Company" id="Company">
+                                <option value="Dell">Dell</option>
+                                <option value="Lenovo">Lenovo</option>
+                                <option value="HP">HP</option>
+                                <option value="Asus">Asus</option>
+                                <option value="Acer">Acer</option>
+                                <option value="MSI">MSI</option>
+                                <option value="Toshiba">Toshiba</option>
+                                <option value="Apple">Apple</option>
+                                <option value="Samsung">Samsung</option>
+                                <option value="Razer">Razer</option>
+                                <option value="Mediacom">Mediacom</option>
+                                <option value="Microsoft">Microsoft</option>
+                                <option value="Xiaomi">Xiaomi</option>
+                                <option value="Vero">Vero</option>
+                                <option value="Chuwi">Chuwi</option>
+                                <option value="Google">Google</option>
+                                <option value="Fujitsu">Fujitsu</option>
+                                <option value="LG">LG</option>
+                                <option value="Huawei">Huawei</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="TypeName">Laptop Type name</label>
+                            <select class="form-control" name="TypeName" id="TypeName">
+                                <option value="Notebook">Notebook</option>
+                                <option value="gaming">Gaming Laptop</option>
+                                <option value="ultrabook">Ultrabook</option>
+                                <option value="convertible">2-in-1 Convertible</option>
+                                <option value="workstation">Workstation Laptop</option>
+                                <option value="netbook">Netbook</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Inches">Inches</label>
+                            <select class="form-control" name="Inches" id="Inches">
+                                <option value="15.6">15.6 inches</option>
+                                <option value="14.0">14.0 inches</option>
+                                <option value="13.3">13.3 inches</option>
+                                <option value="17.3">17.3 inches</option>
+                                <option value="12.5">12.5 inches</option>
+                                <option value="11.6">11.6 inches</option>
+                                <option value="12.0">12.0 inches</option>
+                                <option value="13.5">13.5 inches</option>
+                                <option value="13.9">13.9 inches</option>
+                                <option value="12.3">12.3 inches</option>
+                                <option value="10.1">10.1 inches</option>
+                                <option value="15.4">15.4 inches</option>
+                                <option value="15.0">15.0 inches</option>
+                                <option value="13.0">13.0 inches</option>
+                                <option value="18.4">18.4 inches</option>
+                                <option value="17.0">17.0 inches</option>
+                                <option value="14.1">14.1 inches</option>
+                                <option value="11.3">11.3 inches</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Weight">Weight</label>
+                            <select class="form-control" name="Weight" id="Weight">
+                                <option value="2.20">2.20 kg</option>
+                                <option value="2.10">2.10 kg</option>
+                                <option value="2.00">2.00 kg</option>
+                                <option value="2.40">2.40 kg</option>
+                                <option value="2.30">2.30 kg</option>
+                                <option value="4.50">4.50 kg</option>
+                                <option value="1.14">1.14 kg</option>
+                                <option value="3.80">3.80 kg</option>
+                                <option value="3.25">3.25 kg</option>
+                                <option value="2.34">2.34 kg</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cpu name">CPU Name</label>
+                            <select class="form-control" name="cpu name" id="cpu_name">
+                                <option value="Intel Core i7">Intel Core i7</option>
+                                <option value="Intel Core i5">Intel Core i5</option>
+                                <option value="An Intel Processor">An Intel Processor</option>
+                                <option value="Intel Core i3">Intel Core i3</option>
+                                <option value="AMD Processor">AMD Processor</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Ram_size">Ram size</label>
+                            <select class="form-control" name="Ram_size" id="Ram_size">
+                                <option value="8">8 GB</option>
+                                <option value="4">4 GB</option>
+                                <option value="16">16 GB</option>
+                                <option value="6">6 GB</option>
+                                <option value="12">12 GB</option>
+                                <option value="2">2 GB</option>
+                                <option value="32">32 GB</option>
+                                <option value="24">24 GB</option>
+                                <option value="64">64 GB</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="HDD">HDD</label>
+                            <select class="form-control" name="HDD" id="HDD">
+                                <option value="0">0 GB (No HDD)</option>
+                                <option value="1000">1000 GB (1 TB)</option>
+                                <option value="500">500 GB</option>
+                                <option value="2000">2000 GB (2 TB)</option>
+                                <option value="32">32 GB</option>
+                                <option value="128">128 GB</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="SSD">SSD</label>
+                            <select class="form-control" name="SSD" id="SSD">
+                                <option value="256">256 GB</option>
+                                <option value="0">0 GB (No SSD)</option>
+                                <option value="128">128 GB</option>
+                                <option value="512">512 GB</option>
+                                <option value="1000">1000 GB (1 TB)</option>
+                                <option value="32">32 GB</option>
+                                <option value="180">180 GB</option>
+                                <option value="16">16 GB</option>
+                                <option value="64">64 GB</option>
+                                <option value="1024">1024 GB (1 TB)</option>
+                                <option value="768">768 GB</option>
+                                <option value="240">240 GB</option>
+                                <option value="8">8 GB</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Hybrid">Hybrid</label>
+                            <select class="form-control" name="Hybrid" id="Hybrid">
+                                <option value="0">0</option>
+                                <option value="1000">1000</option>
+                                <option value="508">508</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Flash_Storage">Flash Storage</label>
+                            <select class="form-control" name="Flash_Storage" id="Flash_Storage">
+                                <option value="0">0 GB</option>
+                                <option value="32">32 GB</option>
+                                <option value="64">64 GB</option>
+                                <option value="256">256 GB</option>
+                                <option value="16">16 GB</option>
+                                <option value="128">128 GB</option>
+                                <option value="512">512 GB</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="operating system">operating system</label>
+                            <select class="form-control" name="operating system" id="operating system">
+                                <option value="Windows">Windows</option>
+                                <option value="No/other OS">No/other OS</option>
+                                <option value="Mac">Mac</option>
+                            </select>
+                        </div>
+                        <div class="col-md-7 mt-3">
+                            <button name="submit" type="submit" class="btn btn-primary" id="getPrice">Get
+                                Price </button>
+                        </div>
+                        <div class="col-md-5 border border-1 Price py-2 border-primary rounded text-secondary ">The Price
+                            of Your Laptop is about<span class="my-custom-font text-primary"id="Price"> 
+                                <!-- Display the laptop price here --></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Add your preferred Bootstrap JS scripts here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
